@@ -389,7 +389,7 @@
                                         copyText.select();
                                         document.execCommand("copy");
                                         copyText.classList.add('hide_text');
-                                        alert('Tierlist data copied to your keyboard. Simply access your file, ctrl+a, ctrl+v, and save.');
+                                        alert('Tierlist data copied to your keyboard. Send to Imperial to update tierlist.');
                                     }
 
                                     saveButton.addEventListener('click', function() {
