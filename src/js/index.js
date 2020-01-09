@@ -101,32 +101,6 @@
                                         $("#gods").hide();
                                     }
                         
-                                    function adCycle() {
-                                        $("#adimage2").fadeOut(1000);
-                                        $("#adimage1").fadeOut(1000,function() {
-                                            var max = ads.length-1;
-                        
-                                            $("#adimage1").attr("src",ads[ad][0]);
-                                            $("#adimage1").attr("alt",ads[ad][2]);
-                                            $("#adlink1").attr("href",ads[ad][1]);
-                                            $("#adimage1").fadeIn(500);
-                        
-                                            ad++;
-                                            if(ad > max)
-                                                ad = 0;
-                        
-                                            $("#adimage2").attr("src",ads[ad][0]);
-                                            $("#adimage2").attr("alt",ads[ad][2]);
-                                            $("#adlink2").attr("href",ads[ad][1]);
-                                            $("#adimage2").fadeIn(500);
-                        
-                                            
-                                            ad++;
-                                            if(ad > max)
-                                                ad = 0;
-                                        });     	
-                                    }
-
                                     function filterGods(x) {
                                         for (let i=0; i<godImage.length; i++) {
                                             godImage[i].classList.add('hidden_god');
